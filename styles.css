@@ -79,8 +79,10 @@ button{
       }
 
       .plogo{
-        margin-top: 50px;
+        margin-top: 40px;
         font-family: "Italiana", sans-serif;
+        font-size: 25px;
+        color: #aa5c5c;
       }
   
       .button-conteiner{
@@ -129,14 +131,15 @@ button{
 
       .meu-retangulo {
         width: 1000px;            
-        height: 400px;           
+        height: 300px;           
         border-radius: 20px;
         background-color: #EDC8C7;
         margin-top: 40px;
-        margin-left: 260px;
-        display: flex;
+        margin-left: 175px;
+
+        ;display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center
       }
 
       .btn2{
@@ -146,13 +149,12 @@ button{
         background-color: #ae8383;
         border-radius: 10px;
         cursor: pointer;
-        margin-left: 10px;
         font-family: "VT323", monospace;
         font-size: 1.5rem;
         display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 710px;
+      margin-left: 610px;
       margin-top: 40px;
       }
 
