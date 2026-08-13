@@ -6,13 +6,9 @@ button{
 }
 
  body {
-      font-family: Arial, sans-serif;
-      max-width: 500px;
-      margin: 50px auto;
-      margin-left: auto;
-      margin-right: auto;
       border-radius: 8px;
       background-color: #F7DFDD;
+  
     }
 
     .campo-grupo {
@@ -28,7 +24,9 @@ button{
 
     button {
       padding: 100px;
+      margin-top: 40px;
       margin-right: 5px;
+      margin-left: 0px;
       width: 20vw;
       height: 60vh;
       cursor: pointer;
@@ -49,3 +47,41 @@ button{
       border-radius: 4px;
       min-height: 20px;
     }
+
+    .logo{
+      width: 80px;
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      }
+
+      header{
+        border-bottom: 2px solid #e4b7b7;
+        padding: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: row;
+
+      }
+
+      h1{
+        color:#af7171 ;
+        text-align: center;
+        font-family: "VT323", monospace;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      .plogo{
+        margin-top: 50px;
+        font-family: "Italiana", sans-serif;
+      }
+  
+      .button-conteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+      }
