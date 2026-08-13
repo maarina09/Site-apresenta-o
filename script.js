@@ -22,10 +22,8 @@ function efeitoMaquinaDeEscrever(texto, elemento, atraso) {
   }, atraso);
 }
 
-campoInput.addEventListener('input', function() {
-  efeitoMaquinaDeEscrever(campoInput.value, elementoTexto, velocidade);
-});
 
-function MaquinaDeEscrever(campoInput.addEventListener('input', function() {
-  efeitoMaquinaDeEscrever(campoInput.value, elementoTexto, velocidade);
-}));
+function mostrarMensagem(area) {
+            const divMensagem = document.getElementById('mensagem');
+            divMensagem.textContent = `> Carregando módulos para: ${area}... SUCESSO!`;
+        }
