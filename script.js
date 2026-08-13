@@ -25,3 +25,7 @@ function efeitoMaquinaDeEscrever(texto, elemento, atraso) {
 campoInput.addEventListener('input', function() {
   efeitoMaquinaDeEscrever(campoInput.value, elementoTexto, velocidade);
 });
+
+function MaquinaDeEscrever(campoInput.addEventListener('input', function() {
+  efeitoMaquinaDeEscrever(campoInput.value, elementoTexto, velocidade);
+}));
