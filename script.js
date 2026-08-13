@@ -48,7 +48,8 @@ function DesculpasParaPrgramadores(){
   "O código estava tão perfeito que o computador ficou com inveja e travou."]
 
   const indiceAleatorio = Math.floor(Math.random() * desculpas.length);
+
+  let desculpa = document.getElementById("desculpa").textContent = desculpas[indiceAleatorio]
   
-  return desculpas[indiceAleatorio]
 }
 
