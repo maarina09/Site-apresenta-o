@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 button{
     display: flex;
@@ -104,8 +105,12 @@ button{
         background-color: #ae8383;
         border-radius: 10px;
         cursor: pointer;
-        margin-left: 10px
-        
+        margin-left: 10px;
+        font-family: "VT323", monospace;
+        font-size: 1.5rem;
+        display: flex;
+      align-items: center;
+      justify-content: center;
       }
 
       #botao-div{
@@ -122,3 +127,28 @@ button{
       }
       
 
+      .meu-retangulo {
+        width: 1000px;            
+        height: 400px;           
+        border-radius: 20px;
+        background-color: #EDC8C7;
+        margin-top: 40px;
+        margin-left: 260px;
+      }
+
+      .btn2{
+        width: 100px;
+        height: 40px;
+        border: solid 1px rgb(145, 99, 99);
+        background-color: #ae8383;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 10px;
+        font-family: "VT323", monospace;
+        font-size: 1.5rem;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 710px;
+      margin-top: 40px;
+      }
