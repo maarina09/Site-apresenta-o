@@ -1,20 +1,29 @@
-const campoInput = document.getElementById('meu-input');
-const elementoTexto = document.getElementById('texto-maquina');
+
 
 const velocidade = 80;
 let intervalo;      
 
-function efeitoMaquinaDeEscrever(texto, elemento, atraso) {
- 
+function efeitoMaquinaDeEscrever() {
+  // Limpa qualquer animação que esteja rodando no momento
   clearInterval(intervalo);
-  
-  elemento.textContent = '';
-  
+
+  // Seleciona os elementos pelo ID do seu HTML
+  const input = document.getElementById('meu-input');
+  const elementoTexto = document.getElementById('texto-maquina');
+
+  // Pega o texto digitado
+  const texto = input.value;
+  const atraso = 60; // Velocidade da digitação em milissegundos
+
+  // Limpa o texto antigo antes de começar
+  elementoTexto.textContent = '';
+
   let i = 0;
-  
-  intervalo = setInterval(function() {
+
+  // Inicia o efeito letra por letra
+  intervalo = setInterval(function () {
     if (i < texto.length) {
-      elemento.textContent += texto.charAt(i);
+      elementoTexto.textContent += texto.charAt(i);
       i++;
     } else {
       clearInterval(intervalo);
@@ -22,8 +31,3 @@ function efeitoMaquinaDeEscrever(texto, elemento, atraso) {
   }, atraso);
 }
 
-
-function mostrarMensagem(area) {
-            const divMensagem = document.getElementById('mensagem');
-            divMensagem.textContent = `> Carregando módulos para: ${area}... SUCESSO!`;
-        }

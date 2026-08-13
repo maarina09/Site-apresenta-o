@@ -100,17 +100,25 @@ button{
       .btn{
         width: 100px;
         height: 40px;
-        border: solid 1px rosybrown;
+        border: solid 1px rgb(145, 99, 99);
         background-color: #ae8383;
         border-radius: 10px;
         cursor: pointer;
         margin-left: 10px
+        
       }
 
       #botao-div{
         display: flex;
         flex-direction: row;
         justify-content: center;
+      }
+
+      #texto-maquina{
+        font-size: 50px;
+        text-align: center;
+        color: #965858;
+        font-family: "Special Elite", system-ui;
       }
       
 
