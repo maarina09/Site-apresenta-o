@@ -33,7 +33,10 @@ button{
       border: none;
       border-radius: 4px;
       background-color: #EDC8C7;
-      color: white;
+      color: rgb(158, 91, 91);
+      font-family: "VT323", monospace;
+      font-size: 20px;
+      text-align: center;
     }
 
     button:hover {
@@ -65,7 +68,7 @@ button{
       }
 
       h1{
-        color:#af7171 ;
+        color:#b67a7a ;
         text-align: center;
         font-family: "VT323", monospace;
         font-size: 40px;
