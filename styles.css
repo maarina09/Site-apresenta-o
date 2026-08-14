@@ -257,3 +257,56 @@ button{
           margin-top: 50px;
           margin-left: 900px;
         }
+
+        
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px; 
+            padding: 40px 20px;
+        }
+
+        .card-btn {
+            position: relative;
+            width: 260px;            
+            height: 360px;          
+            border-radius: 12px;    
+            overflow: hidden;        
+            text-decoration: none;   
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            transition: transform 0.3s ease;
+        }
+
+
+        .card-texto {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-texto span {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+       
+        .card-btn:hover .card-texto {
+          background: rgba(207, 157, 164, 0.486); 
+        }
