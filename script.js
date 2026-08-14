@@ -53,3 +53,51 @@ function DesculpasParaPrgramadores(){
   
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const displayCor = document.getElementById('displayCor');
+  const codigoHex = document.getElementById('codigoHex');
+  const btnGerar = document.getElementById('btnGerar');
+  const btnCopiar = document.getElementById('btnCopiar');
+
+  // TRAVA DE SEGURANÇA: Só executa se os elementos existirem na página atual
+  if (btnGerar && btnCopiar) {
+
+    // Gera o código Hexadecimal aleatório
+    function gerarCorAleatoria() {
+      const caracteres = '0123456789ABCDEF';
+      let cor = '#';
+      for (let i = 0; i < 6; i++) {
+        cor += caracteres[Math.floor(Math.random() * 16)];
+      }
+      return cor;
+    }
+
+    // Atualiza a interface
+    function atualizarCor() {
+      const novaCor = gerarCorAleatoria();
+      displayCor.style.backgroundColor = novaCor;
+      codigoHex.innerText = novaCor;
+    }
+
+    // Evento do botão gerar
+    btnGerar.addEventListener('click', atualizarCor);
+
+    // Evento do botão copiar
+    btnCopiar.addEventListener('click', () => {
+      const texto = codigoHex.innerText;
+
+      navigator.clipboard.writeText(texto).then(() => {
+        btnCopiar.innerText = 'Copiado! ✓';
+        btnCopiar.style.backgroundColor = '#10b981';
+
+        setTimeout(() => {
+          btnCopiar.innerText = 'Copiar';
+          btnCopiar.style.backgroundColor = '';
+        }, 1500);
+      });
+    });
+
+    // Gera a primeira cor assim que o usuário entra na página
+    atualizarCor();
+  }
+});
